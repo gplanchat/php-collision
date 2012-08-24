@@ -2,5 +2,5 @@ PHP_ARG_ENABLE(collision, whether to enable Collision Framework support, [ --ena
 
 if test "$PHP_COLLISION" = "yes"; then
   AC_DEFINE(HAVE_COLLISION, 1, [Whether you have Collision Framework support])
-  PHP_NEW_EXTENSION(collision, collision.c, $ext_shared)
+  PHP_NEW_EXTENSION(php_collision, collision.c, $ext_shared)
 fi
